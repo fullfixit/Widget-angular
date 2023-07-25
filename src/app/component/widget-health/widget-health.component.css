@@ -1,0 +1,9 @@
+#WidgetHealth{
+    display: block;
+    border-radius: 10px;
+    width: 200px;
+    height: 220px;
+    background:rgb(0, 0, 0);
+    background: linear-gradient(180deg, rgb(0, 0, 0, 1) 0%, rgba(8, 7, 42,1));
+    color: white;
+}
