@@ -12,7 +12,7 @@ export class ApiService {
 
   constructor(private http: HttpClient) { }
 
-  public fetchData(): Observable<any> {
-    return this.http.get<any>(`${this.apiUrl}/posts`);
+  public getData(): Observable<any> {
+    return this.http.get<any>(this.apiUrl);
   }
 }

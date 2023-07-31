@@ -7,22 +7,12 @@ import { ApiService } from 'src/app/api.service';
   styleUrls: ['./widget-horoscope.component.css']
 })
 export class WidgetHoroscopeComponent implements OnInit {
-  data: any;
+  meteo: any;
 
-  constructor(private apiService: ApiService) {}
-
-  ngOnInit() {
-    this.fetchDataFromApi();
+  constructor(private apiService: ApiService) {
   }
 
-  fetchDataFromApi() {
-    this.apiService.fetchData().subscribe(
-      (response) => {
-        this.data = response;
-      },
-      (error) => {
-        console.error('Erreur lors de la récupération des données :', error);
-      }
-    );
+  ngOnInit() {
+    this.apiService.getData().subscribe()
   }
 }
